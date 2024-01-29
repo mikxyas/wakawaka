@@ -16,10 +16,10 @@
 #define OLED_RESET -1    //   QT-PY / XIAO
 Adafruit_SH1106G display = Adafruit_SH1106G(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-const char *ssid = "";
-const char *password = "";
-const char *apiEndpoint = "https://wakapi.dev/api/compat/wakatime/v1/users//stats/today";
-const char *authorizationToken = "";
+const char *ssid = " ";                                                                                         // your wifi ssid or name
+const char *password = " ";                                                                                     // your wifi password
+const char *apiEndpoint = "https://wakapi.dev/api/compat/wakatime/v1/users/[your wakapi username]/stats/today"; // add your username
+const char *authorizationToken = " ";                                                                           // get REST api or auth token from wakapi
 
 unsigned long lastRequestTime = 0;
 const unsigned long requestInterval = 3 * 60 * 1000;
